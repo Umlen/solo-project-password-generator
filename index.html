@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Password Generator</title>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel = "stylesheet" href = "index.css">
+    </head>
+    <body>
+        <main class = "maincontent">
+            <h1 class = "maincontent-header">Generate a random password</h1>
+            <h2 class = "maincontent-subheader">Never use an insecure password again</h2>
+
+            <div class = "maincontent-options">
+                <h3 class = "options-header">Set options</h3>
+                <div class = "options-option-wrapper">
+                    <label class = "options-name" for = "pwd-length">Length</label>
+                    <input type = "text" id = "pwd-length">
+                </div>
+                <hr class = "maincontent-options-lines"> 
+                <div class = "options-option-wrapper">
+                    <input type = "checkbox" id = "pwd-symbols" class = "options-checkbox" checked>
+                    <label class = "options-name" for = "pwd-symbols">Symbols</label>
+                </div>
+                <hr class = "maincontent-options-lines"> 
+                <div class = "options-option-wrapper">
+                    <input type = "checkbox" id = "pwd-numbers" class = "options-checkbox" checked>
+                    <label class = "options-name" for = "pwd-numbers">Numbers</label>
+                </div>
+            </div>
+
+            <div class = "controls-wrapper">
+                <div class = "controls-password"></div>
+                <button id = "generate-btn">Generate passwords</button>
+                <div class = "controls-password"></div>
+            </div>
+        </main>
+		<footer class = "footer">
+			Created by <a class = "footer-link" href = "https://github.com/Umlen" target = "_blank">Viktor P.</a>
+            Want to create your own Website? Take <a class = "footer-link" href="https://scrimba.com/learn/htmlandcss" target="_blank">this HTML & CSS course.</a>
+		</footer>
+        <script src = "index.js"></script>
+    </body>
+</html>
